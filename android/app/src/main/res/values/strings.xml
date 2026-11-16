@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Beauty Studio Pro</string>
+    <string name="title_activity_main">Beauty Studio Pro</string>
+    <string name="package_name">com.beautystudio.app</string>
+    <string name="custom_url_scheme">com.beautystudio.app</string>
+</resources>
