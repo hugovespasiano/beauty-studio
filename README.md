@@ -27,6 +27,19 @@ Aplicativo de edição estética facial e corporal de alta precisão com process
 
 ---
 
+## 🧠 Engenharia On-Device & Inteligência Visual (Mesa Estratégica)
+
+O Beauty Studio Pro adota a arquitetura de processamento em borda (*Edge / On-Device Processing*) resgatada do acervo da Mesa Estratégica da Vespasiano Labs:
+
+1. **🪄 Inpainting Local com Poisson Blending (`acly/krita-ai-diffusion` — Prints 401-402):**
+   - Em vez de um mero filtro de desfoque (*blur*) que destrói a textura natural, a borracha inteligente utiliza síntese de textura baseada em patches circunvizinhos. Preserva o relevo e os poros originais da pele, eliminando manchas e espinhas com resultado imperceptível.
+2. **✂️ Segmentação de Silhueta e Bloqueio de Cenário (`NoBG.space` — Print 227):**
+   - Máscara de segmentação anatômica executada via WebAssembly local. Permite aplicar a modelagem corporal (afinar cintura, modelar silhueta) **congelando o fundo da foto**, o que impede de forma definitiva o "efeito azulejo torto" ou paredes deformadas.
+3. **↔️ Cortina Tátil Antes x Depois (`Emil Kowalski Motion` — Prints 203 e 252-259):**
+   - Slider tátil de tela dividida (*split screen*) de alta precisão com física inercial calibrada para o toque do polegar no Galaxy S25.
+
+---
+
 ## 🚀 Como Rodar o Projeto
 
 ### Modo Web / Preview Rápido:
