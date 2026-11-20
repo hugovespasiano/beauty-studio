@@ -1,3 +1,14 @@
+# Environment variables and secrets (Padrão Constitucional v2.8.0)
+.env
+.env.*
+!.env.example
+!.env.template
+secrets/
+*.pem
+*.key
+*.p12
+*.pfx
+
 # Logs
 logs
 *.log
